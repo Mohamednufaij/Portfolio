@@ -1,12 +1,12 @@
 import React from 'react';
 import style from './main.module.css'; // Import CSS module for styling
-import img from './FreeImageKit.com_400x400_image.jpeg'
-
+import img from './new.jpeg'
+// import pdf from './pdf'
 const About = () => {
   // Function to handle download button click
   const handleDownloadResume = () => {
     // Replace 'path/to/your/resume.pdf' with the actual path to your resume file
-    const resumeUrl = 'path/to/your/resume.pdf';
+    const resumeUrl = '"C:\Users\faris\OneDrive\Desktop\my_resume.pdf"';
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.setAttribute('download', 'Your_Name_Resume.pdf'); // Set the downloaded file name

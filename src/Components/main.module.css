@@ -1,68 +1,4 @@
-/* App.css */
-
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #header {
-    background-color: black;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  #header:hover{
-    cursor: pointer;
-    color: #77dd00;
-  }
-  
-  .menubar>ul{
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .menubar>ul>li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  .menubar>ul>li>a {
-    color: #fff;
-    text-decoration: none;
-  }
-  .menubar>ul>li>a:hover{
-    cursor: pointer;
-    color: #77dd00;
-  } 
-  section {
-    padding: 20px;
-  }
-  
-  section h2 {
-    margin-top: 0;
-  }
-  
-  .project {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  
-  footer {
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  } */
-
-
-  /* Header.css */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -70,11 +6,10 @@
 
 /* main.module.css */
 
-.header {
+#header {
   background-color: black;
   padding: 10px 20px;
   height: 75px;
-  /* width: 100%; */
 }
 
 .navLinks {
@@ -83,12 +18,12 @@
   padding: 0;
   display: flex;
   justify-content: flex-end;
-  margin-top: -25px;
+  margin-top: 25px;
   
 }
 
 .navLinks li {
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .navLinks li a {
@@ -115,138 +50,131 @@
 
 /* style for about us */
 
-h1{
+h1 {
   margin-top: 3px;
   color: #66bb00;
 }
-p{
+
+p {
   margin-top: 15px;
 }
+
 .aboutContainer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   padding: 20px;
-  height: 80vh;
-  width: 100%;
   background-color: black;
-  /* border: 1px 1px 1px solid #77dd00; */
 }
 
 .description {
-  flex: 1;
-  padding-right: 20px;
+  padding: 20px;
   color: white;
+  text-align: center;
 }
 
 .imageContainer {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  height: 400px;
-  width: 400px;
+  margin-top: 20px;
 }
-
-/* .profileImage {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  border-radius: 50%;
-  object-fit: contain; /* Ensure the entire image fits within the container without cropping 
-} */
 
 .profileImage {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
   border-radius: 50%;
-  object-fit: cover;/* Maintain aspect ratio and cover the container*/
+  object-fit: cover;
 }
-
 
 /* Style the download button */
 button {
   margin-top: 20px;
-  background-color: #77dd00; /* Set button background color */
-  color: black; /* Set text color to white */
-  padding: 10px 20px; /* Add padding to the button */
-  border: none; /* Remove button border */
-  border-radius: 5px; /* Add border radius to button */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  transition: background-color 0.3s; /* Add transition effect to button background color */
+  background-color: #77dd00;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color:black;
-  border:1px solid white;
-  color: white; /* Change button background color on hover */
+  background-color: black;
+  border: 1px solid white;
+  color: white;
 }
-
 
 /* style for skills portion */
 
-.skillsContainer {
-    padding: 20px;
-    /* background-color: #54595F; */
-  }
-  
-  .heading {
-    text-align: center;
-  }
-  
-  .skillsList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-  
-  .skillItem {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .skillItem img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; /* to make it round */
-  }
+#skillsContainer {
+  padding: 20px;
+  background-color: #000;
+}
 
+.heading {
+  text-align: center;
+  color: #77dd00;
+  margin-bottom: 40px;
+}
 
-  /* style for projects portion */
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
 
-  
-  .projectContainer {
-    display: flex;
-    padding: 20px;
-  }
-  
-  .projectDescription {
-    flex: 1;
-  }
-  
-  .projectImages {
-    flex: 1;
-    display: flex;
-  }
-  
-  .imageContainer {
-    flex: 1;
-    margin: 0 5px;
-  }
-  
-  .imageContainer img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+.skillItem {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
 
+.skillItem img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+/* style for projects portion */
+
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #000;
+}
+
+.projectDescription {
+  color: #66bb00;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #000;
+}
+
+.projectImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.imageContainer {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  background-color: #000
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+}
 
 /* contact me style */
-/* Add styles for the contact page */
 
-.contactContainer {
+#contactContainer {
   padding: 20px;
+  background-color: #000;
 }
 
 .contactInfo {
@@ -255,14 +183,14 @@ button:hover {
 
 .contactInfo p {
   margin-bottom: 10px;
+  color: #66bb00;
+  text-align: center;
 }
 
-
-/* style for footer  */
-/* footer.module.css */
+/* style for footer */
 
 .footer {
-  background-color: #000; /* Black background */
+  background-color: #000;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -270,12 +198,61 @@ button:hover {
 }
 
 .socialIcons a {
-  color: #fff; /* White color for icons */
+  color: #fff;
   font-size: 24px;
   margin-right: 10px;
   text-decoration: none;
 }
 
 .socialIcons a:hover {
-  color: #77dd00; /* Green color on hover */
+  color: #77dd00;
 }
+
+#myproject {
+  background-color: #000;
+  color: #66bb00;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+/* Media Queries for responsiveness */
+
+@media only screen and (min-width: 768px) {
+  .navLinks {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .aboutContainer {
+    flex-direction: row;
+  }
+
+  .description {
+    flex: 1;
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  .profileImage {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  .heading {
+    margin-bottom: 80px;
+    /* margin-top: 20px; */
+  }
+}
+/* #projects{
+  background-color: #000;
+} */

@@ -7,14 +7,14 @@ import style from './main.module.css'; // Importing the CSS module for styling
 import { Link } from 'react-router-dom';
 const Header = () => {
     return (
-        <header className={style.header}>
-            <h1 className={style.name}>Mohamed Nufaij T K</h1>
+        <header id={style.header}>
+            <h1 className={style.name}></h1>
             <nav>
                 <ul className={style.navLinks}>
-                    <li><Link to='/' className={style.active}>Home</Link></li>
-                    <li><Link to='/skills' className={style.navLink}>Skills</Link></li>
-                    <li><Link to='/projects' className={style.navLink}>Projects</Link></li>
-                    <li><Link to='contact' className={style.navLink}>Contact Me</Link></li>
+                    <li><a href="" className={style.active}>Home</a></li>
+                    <li><a href="#skillsContainer" className={style.navLink}>Skills</a></li>
+                    <li><a href="#Projects"className={style.navLink}>Projects</a></li>
+                    <li><a href=".contactContainer"className={style.navLink}>Contact Me</a></li>
                 </ul>
             </nav>
         </header>
@@ -22,4 +22,3 @@ const Header = () => {
 };
 
 export default Header;
-

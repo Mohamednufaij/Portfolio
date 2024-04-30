@@ -5,7 +5,7 @@ import style from './main.module.css'; // Import CSS module for styling
 
 const Contactme = () => {
   return (
-    <div className={style.contactContainer}>
+    <div id={style.contactContainer}>
       <h2>Contact Me</h2>
       <div className={style.contactInfo}>
         <p><strong>Email:</strong> nufaijjufu321@gmail.com</p>

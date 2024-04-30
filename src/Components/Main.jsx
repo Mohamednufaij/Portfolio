@@ -11,21 +11,12 @@ import Header from './Header';
 const Main = () => {
   return (
     <div className="App">
-      <BrowserRouter>
+      
       <Header/>
-      
-      <Routes>
-         <Route element={<About/>} path='/'></Route>
-         <Route element={<Skills/>} path='/skills'></Route>
-         <Route element={<Projects/>} path='/projects'></Route>
-         <Route element={<Contactme/>} path='/contact'></Route>
-         
-      
-      
-      </Routes>
-      
-      
-      </BrowserRouter>
+      <About/>
+      <Skills/>
+      <Projects/>
+      <Contactme/>
       <Footer/>
     </div>
   );

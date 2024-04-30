@@ -10,7 +10,7 @@ import js from './js.png'
 import boot from './bootstrap.jpg'
 const Skills = () => {
   return (
-    <div className={style.skillsContainer}>
+    <div id={style.skillsContainer}>
       <div className={style.heading}>
         <h2>Let's Explore My Skills</h2>
       </div>
